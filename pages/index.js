@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import Script from "next/script";
+
 import styles from "../styles/Home.module.css";
+import blog_main_img from "../public/img/blog_main_img.jpg";
 
 export default function Home() {
   return (
@@ -16,23 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Script src="/sc.js" strategy="lazyOnload"></Script> */}
-      <nav className={styles.mainNav}>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Blog</li>
-          <li>Contact Us</li>
-        </ul>
-      </nav>
+
       <main className={styles.main}>
         <h1 className={styles.title}>Hunting Coder</h1>
-
+        <img className={styles.main_img} src={blog_main_img.src} />
         <p className={styles.description}>
           A blog for hunting coders by a hunting coder
         </p>
 
         <div className="blogs">
-          <h2>Popular Blogs </h2>
+          <h2>Latests Blogs </h2>
           <div className="blogsItem">
             <h3>How to learn Javascript </h3>
             <p>Javascript is the language used to design for the web</p>
@@ -81,18 +74,7 @@ export default function Home() {
           </a>
         </div> */}
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   );
 }
