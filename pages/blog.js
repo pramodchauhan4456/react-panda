@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import styles from "../styles/Blog.module.css";
+
+//step 1: Collect all the files from blogdta directory
+//step 2: Iterate through the and Display them
 const Blog = () => {
   return (
     <main className={styles.main}>
